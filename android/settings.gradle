@@ -1,0 +1,10 @@
+rootProject.name = 'demo_react_native'
+
+// Include Modules in to Project
+include ':app'
+include ':react-native-navigation'
+include ':react-native-vector-icons'
+
+// Library Project AAR path
+project(':react-native-navigation').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-navigation/android/app/')
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
